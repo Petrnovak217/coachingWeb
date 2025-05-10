@@ -1,0 +1,46 @@
+#Price-main{
+    .background-price{
+        @include  bg-pages;
+    }
+
+    
+    .price-list{
+        margin-bottom: 100px;
+        padding: 0 20px;
+        
+        h1{
+            @include header-text;
+            margin-bottom: 45px;
+        }
+
+        .price-items{    
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 15px;
+
+            .price-item{
+                display: inline-block;
+
+                h3{   
+                    @include small-labes;
+                    margin-bottom: 25px;
+                   
+                }
+
+                p{
+                    margin-bottom: 15px;
+                }
+            }
+
+            .price-lesson{
+                
+                margin: 2px;
+                float: right;
+                
+                h3{     
+                    @include small-labes;
+                }
+            }   
+        }
+    }   
+}

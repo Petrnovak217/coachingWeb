@@ -1,0 +1,89 @@
+#Contact-me{
+    
+    margin-bottom: 100px;
+
+    .background-contact{
+        @include bg-pages;
+    }
+    .contact-form{
+        padding: 0 20px;
+        .title{
+            h1{
+                @include subpage-header-text;
+            }
+    
+            h3{
+                @include  h3text;
+            }
+        }
+
+        .content-form{
+ 
+            .form{
+               
+                form{
+                    max-width: 550px;
+                    
+                     
+                    label{
+                        color: rgb(221, 214, 214);
+                        font-size: 16.5px;
+                    }
+    
+                    input, textarea{
+                        font-family: sans-serif;
+                        width: 100%;
+                        padding: 11px;
+                        margin:5px 0 12px 0 ;
+                        outline: none;
+                        border: 1px solid transparent;
+                        border-radius: 2px;
+                        
+
+                        &:focus{
+                            border: 1px solid rgba(211, 121, 36, 0.849);
+                            transition:all 0.3s;        
+                        }
+                    } 
+
+                    input[type=submit]{
+                        width: 100px;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 12px;       
+                        background: transparent;
+                        border: 1px solid #fff;
+                        border-radius: 5px;      
+                        cursor: pointer;
+                        @include transition;
+                        
+
+                        &:hover{
+                            background-color: rgba(102, 99, 93, 0.698);
+                        }
+                    }
+                }
+            }
+
+            .contact-form-text{
+                color: rgba(255, 255, 255, 0.726);
+                padding-left: 17px;
+    
+
+                .text{
+                   margin-bottom: 20px;
+                   line-height: 1.4em;
+                   font-size: 15.4px;
+
+                   p{
+                       a{
+                           color: $heading-color;
+                       }
+                   }
+                    
+                }
+            }
+        }   
+    }
+}

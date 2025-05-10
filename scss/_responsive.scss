@@ -1,0 +1,275 @@
+@include large{
+
+  .enter-space{
+    width: 100%;
+    height: 60px;  
+  }
+
+  main{
+    margin-left: 0;
+    width: 100%; 
+
+    .header-main{
+     
+      .bg-page{
+       height: 50vh; 
+      }
+    }
+  }
+
+  header{
+    width: 100%;
+    height: 70px;
+    background-color: #443f3f;
+    z-index: 100;
+    position: fixed;
+  
+
+    .navigation-title-responsibel{
+      display: block;
+    }
+   
+
+    .menu-btn{
+      display: block;
+      z-index: 400; 
+    }
+ 
+    .navigation{
+      width: 80%;
+      margin-left: 20%;
+      transform: translateX(100%);
+      background-color: #312f2f;
+      @include transition;
+     
+      
+      &.open{    
+        transform: translateX(0);
+      }    
+        
+      .nav{
+        text-align: left;
+        padding: 50px;  
+        min-height: 20%;  
+  
+        &-items{
+          width: 100%;
+           
+          .menu-item{      
+            padding: 18px;
+            border-bottom: 1px solid whitesmoke;
+  
+            &:nth-child(1){
+              border-top: 1px solid whitesmoke;
+            }
+          }
+        }
+      }  
+
+      .footer-header{
+        display: none;
+      }
+    }
+
+    .navigation-title,p{
+      display: none;
+    }  
+  }
+}
+
+
+.empty-space{
+  width: 100%;
+  height: 70px;
+}
+
+
+@include tablet{
+
+  .Start-me{
+     .icons{
+      .col.span-1-of-3.icon{
+        width: 49%; 
+        margin-bottom: 35px;
+      }
+
+      .col.span-1-of-3.icon:nth-child(3){  
+        width: 100%;
+      }
+     }   
+  }
+
+  #About-main{
+
+    .background-about{
+      @include bg-pages(28vh,40px);
+    }
+
+    .about-me{
+      .content{
+        h1{
+          font-size: 32px;
+          margin-bottom: 15px;    
+        }   
+      } 
+    }
+  }
+
+  #Price-main{
+    .background-price{
+      @include bg-pages(28vh,40px);
+    }
+
+    .price-items{
+        
+      .price-item{
+
+        p{
+          width: 310px;
+        }
+      }
+    }     
+  }
+}
+
+@include largemobile{ 
+
+  main{
+
+    .header-main .bg-page a{
+      left: 49%;
+    }
+
+    .Start-me{
+
+      h1{
+        @include header-text(22px)
+      }
+
+      .icons{
+        .col.span-1-of-3.icon{
+          width: 100%;
+        }
+      }   
+    }
+  
+    .Picture{
+     margin-top: 0;
+      @include bg-pages(34vh); 
+    }
+  }
+  
+
+  #Price-main{
+  
+    .price-items{
+      .price-item{
+      
+        p{
+          width: 180px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  #Contact-me{
+    .contact-form{
+      .title{
+        h1{
+          @include subpage-header-text(32px);
+        }
+      }
+      
+
+      .content-form{
+        .contact-form-text{
+          margin-top: 50px
+        }
+      }
+    }
+  }
+}
+
+
+@include mobilesmall{
+  main{
+    .Contact-link{
+      h1{     
+        @include header-text(25px);
+      }
+
+      h3{
+        @include h3text(16px);   
+      }
+
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+
+  #Price-main{
+    .price-list{
+      .price-items{
+
+        .price-item{
+
+          h3{   
+              @include small-labes(0.8em);     
+          }
+        }
+
+        .price-lesson{
+  
+          h3{  
+              @include small-labes(0.8em);
+          }
+        }   
+      }
+    }
+  }
+}
+
+@include mobile-Extra-Small{
+  header{
+    .navigation{ 
+
+      .nav{
+        &-items{
+         
+          .menu-item{    
+            font-size: 15px;  
+          }
+        }
+      }  
+    }
+  }
+
+  #Price-main{
+    .price-list{
+      
+      .price-items{
+        
+        .price-item{
+          p{
+            width: 100px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile-width{
+  header{
+    .navigation{
+     overflow-y: scroll;
+
+     .nav{
+      margin-bottom: 50px;
+     }
+    }
+  }
+}

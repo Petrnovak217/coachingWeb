@@ -1,0 +1,46 @@
+@import "context";
+@import "menu";
+@import "home";
+@import "about-me";
+@import "price-list";
+@import "contact-me";
+@import "responsive";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+.row{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.row-small{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+body{
+    font-family:  Helvetica, sans-serif;
+    background-color: #443f3f;
+    overflow-x: hidden; 
+}
+
+
+
+/*stop floating*/
+.clearfix{zoom : 1}
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+

@@ -1,0 +1,39 @@
+#About-main{
+    margin-bottom: 70px;
+    .background-about{
+        @include bg-pages;
+    }
+    
+    .about-me{
+        text-align: left;
+        color: #fff;
+
+        .content{
+           margin: 0 20px; 
+            h1{
+                @include subpage-header-text;
+            }
+
+            h3{
+                text-align: left;
+                @include h3text;
+            }
+
+            
+            .small-picture {
+               height: 30vh;  
+               background-image: url("../images/run-woman-men.jpg");
+               background-position: top;
+               background-size: cover;
+               margin: 25px 0; 
+            }
+
+            p{
+                font-size: 17.2px;
+                line-height: 1.6em;
+                margin-bottom: 35px;
+            }
+        }
+        
+    }
+}

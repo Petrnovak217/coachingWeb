@@ -1,0 +1,125 @@
+$heading-color:rgb(255, 241 ,134);
+
+
+@mixin transition {
+    transition: all 0.5s;
+}
+
+@mixin header-text($size:30px) {
+
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: $size;
+    color: $heading-color;
+    font-weight: 550;
+
+        &::after{
+            content: "";
+            width: 100px;
+            display:block ;
+            border-bottom: 1px solid $heading-color;
+            margin: 15px auto;
+        }       
+}
+
+@mixin subpage-header-text ($size:40px) {
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: $size;
+        color: $heading-color;
+        font-weight: bold;
+
+        &::after{
+            content: "";
+            width: 100px;
+            display:block ;
+            border-bottom: 1px solid $heading-color;
+            margin-top: 10px;
+        }  
+}
+
+@mixin bg-pages ($height:47vh,$bottom:50px) {
+    height: $height;
+    background-image: url("../images/man-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    margin-bottom: $bottom;
+}
+
+@mixin h3text ($size:21px){
+    color: #FFFFFFB3;
+    max-width: 40em;
+    font-size: $size;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.2em;      
+}
+
+@mixin small-labes ($font-size:1.2em){
+    font-size: $font-size;
+    color:$heading-color;
+    margin-bottom: 15px;
+}
+
+
+
+@function col-width($columns: 12, $page-width: 100%, $gap: 0.01%){
+    @return ($page-width - $gap*($columns - 1)) / $columns;
+}
+
+@function em($pixels, $basicValue: 16px){
+    @return calc($pixels / $basicValue) * 1em;
+}
+
+@function scrollbar($max-width,$pixels: 17px){
+    @return  $max-width + $pixels ;
+
+         
+}
+
+
+//responsive
+@mixin large{
+    @media screen and (max-width:900px) {
+        @content;
+    }  
+}
+
+@mixin tablet{
+    @media screen and (max-width:600px) {
+        @content;
+    }  
+}
+
+@mixin largemobile {
+    @media screen and (max-width:480px) {
+        @content;
+    }  
+}
+
+
+@mixin mobilesmall {
+    @media screen and (max-width:350px) {
+        @content;
+    }  
+}
+
+
+@mixin mobile-Extra-Small {
+    @media screen and (max-width:295px) {
+        @content;
+    }  
+}
+
+@mixin mobile-width{
+    @media (max-height:400px) {
+        @content;
+    }  
+}
+
+
+
+
+
+

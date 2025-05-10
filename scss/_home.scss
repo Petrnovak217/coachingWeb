@@ -1,0 +1,124 @@
+main{
+    position: relative;
+    overflow: visible;
+    margin-left: 18em;
+    width: calc(100% - 18em);
+
+    .header-main{
+        position: relative;
+        .bg-page{    
+            background-image:url("../images/bg-page-women.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-attachment:scroll;
+            background-position: top;
+
+            a{
+                z-index: 20;
+                display: block;
+                position: absolute;
+                left: 50%;
+                bottom: 3%;
+                transform: translate(-50%,-50%);
+                
+    
+                img{
+                    color: #fff;
+                    width: 30px;
+                }
+            }
+        }         
+    }
+
+    .Start-me{
+        margin: 30px;
+        
+        h1{
+            @include header-text; 
+        }
+
+        .icons{      
+            text-align: center;    
+           
+            .icon{
+                display: inline-block;
+            
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: white;
+                    
+                
+                    i{
+                        font-size: 40px;
+                        margin-bottom: 40px;
+                    }
+
+                    span{
+                       @include small-labes;
+                    }
+
+                     p{
+                        font-size: 1em;
+                        font-weight: 500;
+                        text-align: center;
+                        max-width: 280px;;
+                        line-height: 25px;
+                    }
+                }     
+            } 
+        }
+    }
+
+        
+
+    .Picture{
+        margin-top: 70px;
+        @include bg-pages;
+        
+    }
+
+    .Contact-link{
+        text-align: center;
+        color: #fff;
+        font-family: Helvetica,Arial,sans-serif;
+        margin: 0 8px 80px 8px;
+       
+        h1{     
+            @include header-text;
+        }
+
+        h3{
+            margin: 0 auto;
+            @include h3text;   
+        }
+
+        p{
+            margin: 0 auto;
+            max-width: 52em;
+            line-height: 1.5em;
+            margin-bottom: 50px;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            background-color: $heading-color;
+            padding: em(15px) em(50px);
+            border-radius: 5px;
+            transition: all 0.5s;
+           
+            
+
+            &:hover{
+                background-color: rgb(231, 214, 82);
+            }
+        }
+    }
+     
+}
+
+    
+

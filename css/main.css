@@ -1,0 +1,691 @@
+header {
+  color: #fff;
+  position: relative;
+}
+header .navigation-title-responsibel {
+  display: none;
+  font-size: 22px;
+  padding: 22px;
+}
+header .navigation-title-responsibel a {
+  color: #fff;
+  text-decoration: none;
+}
+header .navigation {
+  text-align: center;
+  width: 288px;
+  height: 100%;
+  border-right: 2px solid rgb(51, 49, 49);
+  position: fixed;
+  background-color: #443f3f;
+}
+header .navigation .navigation-title {
+  display: block;
+  font-size: 28px;
+  padding: 30px;
+}
+header .navigation .navigation-title a {
+  color: #fff;
+  text-decoration: none;
+}
+header .navigation p {
+  font-size: 15px;
+  line-height: 25px;
+}
+header .navigation .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 70vh;
+}
+header .navigation .nav-items {
+  list-style-type: none;
+}
+header .navigation .nav-items .menu-item {
+  font-size: 15.5px;
+  padding: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .navigation .nav-items .menu-item.active > a {
+  color: rgb(255, 241, 134);
+}
+header .navigation .nav-items .menu-item .menu-nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+header .navigation .nav-items .menu-item .menu-nav-link:hover {
+  color: rgb(255, 241, 134);
+}
+header .navigation .footer-header {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 65px;
+}
+header .navigation .footer-header p {
+  display: inline-block;
+}
+header .navigation .footer-header a {
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.685);
+}
+header .navigation .footer-header a:hover {
+  color: aliceblue;
+}
+header .menu-btn {
+  position: fixed;
+  z-index: 2;
+  width: 40px;
+  height: 20px;
+  top: 1.375em;
+  right: 1.875em;
+  cursor: pointer;
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.5s;
+}
+header .menu-btn__burger {
+  position: absolute;
+  top: 0.75em;
+  right: 0;
+  width: 1.375em;
+  height: 1.5px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+header .menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  width: 1.375em;
+  height: 1.5px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+header .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  width: 1.375em;
+  height: 1.5px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+header .menu-btn__burger.open {
+  transform: translate(20%, 5%);
+  background: transparent;
+}
+header .menu-btn__burger.open::before {
+  width: 20px;
+  transform: rotate(45deg) translate(3px, 5px);
+}
+header .menu-btn__burger.open::after {
+  width: 20px;
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+main {
+  position: relative;
+  overflow: visible;
+  margin-left: 18em;
+  width: calc(100% - 18em);
+}
+main .header-main {
+  position: relative;
+}
+main .header-main .bg-page {
+  background-image: url("../images/bg-page-women.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top;
+}
+main .header-main .bg-page a {
+  z-index: 20;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, -50%);
+}
+main .header-main .bg-page a img {
+  color: #fff;
+  width: 30px;
+}
+main .Start-me {
+  margin: 30px;
+}
+main .Start-me h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 241, 134);
+  font-weight: 550;
+}
+main .Start-me h1::after {
+  content: "";
+  width: 100px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 241, 134);
+  margin: 15px auto;
+}
+main .Start-me .icons {
+  text-align: center;
+}
+main .Start-me .icons .icon {
+  display: inline-block;
+}
+main .Start-me .icons .icon .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+main .Start-me .icons .icon .content i {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+main .Start-me .icons .icon .content span {
+  font-size: 1.2em;
+  color: rgb(255, 241, 134);
+  margin-bottom: 15px;
+}
+main .Start-me .icons .icon .content p {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  max-width: 280px;
+  line-height: 25px;
+}
+main .Picture {
+  margin-top: 70px;
+  height: 47vh;
+  background-image: url("../images/man-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+main .Contact-link {
+  text-align: center;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 8px 80px 8px;
+}
+main .Contact-link h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 241, 134);
+  font-weight: 550;
+}
+main .Contact-link h1::after {
+  content: "";
+  width: 100px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 241, 134);
+  margin: 15px auto;
+}
+main .Contact-link h3 {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.7019607843);
+  max-width: 40em;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  line-height: 1.2em;
+}
+main .Contact-link p {
+  margin: 0 auto;
+  max-width: 52em;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+main .Contact-link a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(255, 241, 134);
+  padding: 0.9375em 3.125em;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+main .Contact-link a:hover {
+  background-color: rgb(231, 214, 82);
+}
+
+#About-main {
+  margin-bottom: 70px;
+}
+#About-main .background-about {
+  height: 47vh;
+  background-image: url("../images/man-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+#About-main .about-me {
+  text-align: left;
+  color: #fff;
+}
+#About-main .about-me .content {
+  margin: 0 20px;
+}
+#About-main .about-me .content h1 {
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 40px;
+  color: rgb(255, 241, 134);
+  font-weight: bold;
+}
+#About-main .about-me .content h1::after {
+  content: "";
+  width: 100px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 241, 134);
+  margin-top: 10px;
+}
+#About-main .about-me .content h3 {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7019607843);
+  max-width: 40em;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  line-height: 1.2em;
+}
+#About-main .about-me .content .small-picture {
+  height: 30vh;
+  background-image: url("../images/run-woman-men.jpg");
+  background-position: top;
+  background-size: cover;
+  margin: 25px 0;
+}
+#About-main .about-me .content p {
+  font-size: 17.2px;
+  line-height: 1.6em;
+  margin-bottom: 35px;
+}
+
+#Price-main .background-price {
+  height: 47vh;
+  background-image: url("../images/man-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+#Price-main .price-list {
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+#Price-main .price-list h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 241, 134);
+  font-weight: 550;
+  margin-bottom: 45px;
+}
+#Price-main .price-list h1::after {
+  content: "";
+  width: 100px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 241, 134);
+  margin: 15px auto;
+}
+#Price-main .price-list .price-items {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+}
+#Price-main .price-list .price-items .price-item {
+  display: inline-block;
+}
+#Price-main .price-list .price-items .price-item h3 {
+  font-size: 1.2em;
+  color: rgb(255, 241, 134);
+  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+#Price-main .price-list .price-items .price-item p {
+  margin-bottom: 15px;
+}
+#Price-main .price-list .price-items .price-lesson {
+  margin: 2px;
+  float: right;
+}
+#Price-main .price-list .price-items .price-lesson h3 {
+  font-size: 1.2em;
+  color: rgb(255, 241, 134);
+  margin-bottom: 15px;
+}
+
+#Contact-me {
+  margin-bottom: 100px;
+}
+#Contact-me .background-contact {
+  height: 47vh;
+  background-image: url("../images/man-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+#Contact-me .contact-form {
+  padding: 0 20px;
+}
+#Contact-me .contact-form .title h1 {
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 40px;
+  color: rgb(255, 241, 134);
+  font-weight: bold;
+}
+#Contact-me .contact-form .title h1::after {
+  content: "";
+  width: 100px;
+  display: block;
+  border-bottom: 1px solid rgb(255, 241, 134);
+  margin-top: 10px;
+}
+#Contact-me .contact-form .title h3 {
+  color: rgba(255, 255, 255, 0.7019607843);
+  max-width: 40em;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  line-height: 1.2em;
+}
+#Contact-me .contact-form .content-form .form form {
+  max-width: 550px;
+}
+#Contact-me .contact-form .content-form .form form label {
+  color: rgb(221, 214, 214);
+  font-size: 16.5px;
+}
+#Contact-me .contact-form .content-form .form form input, #Contact-me .contact-form .content-form .form form textarea {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 11px;
+  margin: 5px 0 12px 0;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+#Contact-me .contact-form .content-form .form form input:focus, #Contact-me .contact-form .content-form .form form textarea:focus {
+  border: 1px solid rgba(211, 121, 36, 0.849);
+  transition: all 0.3s;
+}
+#Contact-me .contact-form .content-form .form form input[type=submit] {
+  width: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#Contact-me .contact-form .content-form .form form input[type=submit]:hover {
+  background-color: rgba(102, 99, 93, 0.698);
+}
+#Contact-me .contact-form .content-form .contact-form-text {
+  color: rgba(255, 255, 255, 0.726);
+  padding-left: 17px;
+}
+#Contact-me .contact-form .content-form .contact-form-text .text {
+  margin-bottom: 20px;
+  line-height: 1.4em;
+  font-size: 15.4px;
+}
+#Contact-me .contact-form .content-form .contact-form-text .text p a {
+  color: rgb(255, 241, 134);
+}
+
+@media screen and (max-width: 900px) {
+  .enter-space {
+    width: 100%;
+    height: 60px;
+  }
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+  main .header-main .bg-page {
+    height: 50vh;
+  }
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: #443f3f;
+    z-index: 100;
+    position: fixed;
+  }
+  header .navigation-title-responsibel {
+    display: block;
+  }
+  header .menu-btn {
+    display: block;
+    z-index: 400;
+  }
+  header .navigation {
+    width: 80%;
+    margin-left: 20%;
+    transform: translateX(100%);
+    background-color: #312f2f;
+    transition: all 0.5s;
+  }
+  header .navigation.open {
+    transform: translateX(0);
+  }
+  header .navigation .nav {
+    text-align: left;
+    padding: 50px;
+    min-height: 20%;
+  }
+  header .navigation .nav-items {
+    width: 100%;
+  }
+  header .navigation .nav-items .menu-item {
+    padding: 18px;
+    border-bottom: 1px solid whitesmoke;
+  }
+  header .navigation .nav-items .menu-item:nth-child(1) {
+    border-top: 1px solid whitesmoke;
+  }
+  header .navigation .footer-header {
+    display: none;
+  }
+  header .navigation-title, header p {
+    display: none;
+  }
+}
+.empty-space {
+  width: 100%;
+  height: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .Start-me .icons .col.span-1-of-3.icon {
+    width: 49%;
+    margin-bottom: 35px;
+  }
+  .Start-me .icons .col.span-1-of-3.icon:nth-child(3) {
+    width: 100%;
+  }
+  #About-main .background-about {
+    height: 28vh;
+    background-image: url("../images/man-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+  }
+  #About-main .about-me .content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  #Price-main .background-price {
+    height: 28vh;
+    background-image: url("../images/man-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+  }
+  #Price-main .price-items .price-item p {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .header-main .bg-page a {
+    left: 49%;
+  }
+  main .Start-me h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(255, 241, 134);
+    font-weight: 550;
+  }
+  main .Start-me h1::after {
+    content: "";
+    width: 100px;
+    display: block;
+    border-bottom: 1px solid rgb(255, 241, 134);
+    margin: 15px auto;
+  }
+  main .Start-me .icons .col.span-1-of-3.icon {
+    width: 100%;
+  }
+  main .Picture {
+    margin-top: 0;
+    height: 34vh;
+    background-image: url("../images/man-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+  #Price-main .price-items .price-item p {
+    width: 180px;
+    font-size: 12px;
+  }
+  #Contact-me .contact-form .title h1 {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 32px;
+    color: rgb(255, 241, 134);
+    font-weight: bold;
+  }
+  #Contact-me .contact-form .title h1::after {
+    content: "";
+    width: 100px;
+    display: block;
+    border-bottom: 1px solid rgb(255, 241, 134);
+    margin-top: 10px;
+  }
+  #Contact-me .contact-form .content-form .contact-form-text {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  main .Contact-link h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 241, 134);
+    font-weight: 550;
+  }
+  main .Contact-link h1::after {
+    content: "";
+    width: 100px;
+    display: block;
+    border-bottom: 1px solid rgb(255, 241, 134);
+    margin: 15px auto;
+  }
+  main .Contact-link h3 {
+    color: rgba(255, 255, 255, 0.7019607843);
+    max-width: 40em;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.2em;
+  }
+  main .Contact-link p {
+    font-size: 15px;
+  }
+  #Price-main .price-list .price-items .price-item h3 {
+    font-size: 0.8em;
+    color: rgb(255, 241, 134);
+    margin-bottom: 15px;
+  }
+  #Price-main .price-list .price-items .price-lesson h3 {
+    font-size: 0.8em;
+    color: rgb(255, 241, 134);
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 295px) {
+  header .navigation .nav-items .menu-item {
+    font-size: 15px;
+  }
+  #Price-main .price-list .price-items .price-item p {
+    width: 100px;
+    font-size: 10px;
+  }
+}
+@media (max-height: 400px) {
+  header .navigation {
+    overflow-y: scroll;
+  }
+  header .navigation .nav {
+    margin-bottom: 50px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row-small {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #443f3f;
+  overflow-x: hidden;
+}
+
+/*stop floating*/
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=main.css.map */
